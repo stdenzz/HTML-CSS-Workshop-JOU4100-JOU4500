@@ -1,8 +1,8 @@
 html, body {
     margin: 0;
     padding: 0px 0px 0px 0px;
-    font-family: 'Roboto', sans-serif;
-    color: #666666;
+    font-family: 'times', sans-serif;
+    color: black;
 }
 
 body {
@@ -17,16 +17,17 @@ body {
 }
 
 .logo {
-   font-size: 30px;
+   font-size: 25px;
    position: absolute;
    padding: 0px 0px 0px 20px;
    z-index: 3;
-   color: #131359;
+   color:maroon;
    font-weight: bold;
+    top:-2px
 }
 
 .top-menu {
-   background-color: #131359;
+   background-color: maroon;
    position: absolute;
    top: 85px;
    z-index: 2;
@@ -51,11 +52,11 @@ body {
 }
 
 .top-menu li a:hover {
-    background-color: red;
+    background-color: black;
 }
 
 .current-page-link {
-    background-color: #db0e0e;
+    background-color:black;
 }
 
 .page-content {
@@ -73,7 +74,7 @@ body {
 }
 
 .main-section h1, .main-section h2 {
-    color: black;
+    color: maroon;
 }
 
 .main-section figure, .main-section img {
@@ -89,15 +90,34 @@ body {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    background-color:#3f3c3c;
+    background-color:maroon;
 }
 
 .footer-content {
     padding: 5px 5px 5px 20px;
-    color: white;
+    color: black;
+    font-weight: bold;
 }
 
 .footer-content a:link {
-    color: white;
+    color: black;
     text-decoration: none;
+    font-weight: bold;
 }
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 35%;
+  padding: 49.5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+div.desc {
+  padding: 15px;
+  text-align: center;
